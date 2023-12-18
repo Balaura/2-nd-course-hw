@@ -1,0 +1,128 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     font-family: 'Montserrat', sans-serif;
+}
+
+
+.gamesite {
+
+     &__first-screen {
+          background-image: url(../img/bg_1.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100vh;
+          padding-top: 220px;
+          padding-left: 120px;
+
+          .gamesite__title {
+               color: #FFF;
+               font-size: 64px;
+               font-style: normal;
+               font-weight: 700;
+               line-height: normal;
+               max-width: 789px;
+          }
+
+          .gamesite__text {
+               color: #FFF;
+               font-size: 18px;
+               font-style: normal;
+               font-weight: 300;
+               line-height: 32px;
+               padding-top: 32px;
+               padding-bottom: 44px;
+               max-width: 481px;
+
+               .text_fat {
+                    font-weight: 700;
+               }
+          }
+
+          .gamesite__button {
+               border-radius: 30px;
+               background: #9C0332;
+               color: #FFF;
+               font-size: 18px;
+               font-style: normal;
+               font-weight: 400;
+               line-height: normal;
+               width: 234px;
+               height: 49px;
+
+               &:hover {
+                    background: #EB443F;
+               }
+          }
+     }
+
+     &__gamechoice-screen {
+          display: flex;
+          justify-content: space-between;
+          gap: 32px;
+          padding: 128px 120px 128px 120px;
+          background: #000915;
+
+          .gamesite__cart-game {
+               position: relative;
+               max-width: 379px;
+               max-height: 300px;
+               border-radius: 16px;
+               // background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url($image-path), lightgray 50% / cover no-repeat;
+
+               img {
+                    object-fit: cover;
+                    width: 379px;
+                    height: 300px;
+               }
+
+               .cart-game__link {
+                    position: relative;
+                    display: inline-block;
+
+                    // Псевдоэлемент для создания градиента поверх изображения
+                    &::after {
+                         content: '';
+                         position: absolute;
+                         top: 0;
+                         right: 0;
+                         bottom: 0;
+                         left: 0;
+                         background: linear-gradient(180deg,
+                                   rgba(39, 1, 15, 0.00) 0%,
+                                   #001944 100%);
+                         z-index: 2;
+                    }
+
+                    // Стили для img, чтобы убедиться, что они находятся под псевдоэлементом
+                    img {
+                         display: block;
+                         width: 100%;
+                         height: auto;
+                         z-index: 1;
+                         position: relative;
+                    }
+               }
+
+          }
+
+          .cart-game__name {
+               position: absolute;
+               bottom: 32px;
+               left: 32px;
+               color: #FFF;
+               font-size: 24px;
+               font-style: normal;
+               font-weight: 600;
+               line-height: 32px;
+               z-index: 3;
+          }
+     }
+}
+
+
+@import 'mobile';
