@@ -40,6 +40,7 @@ body {
 .gamesite__first-screen .gamesite__button {
   border-radius: 30px;
   background: #9C0332;
+  border: 0px solid;
   color: #FFF;
   font-size: 18px;
   font-style: normal;
@@ -47,6 +48,8 @@ body {
   line-height: normal;
   width: 234px;
   height: 49px;
+  -webkit-transition: all 1.2s;
+  transition: all 1.2s;
 }
 .gamesite__first-screen .gamesite__button:hover {
   background: #EB443F;
