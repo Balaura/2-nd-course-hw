@@ -105,14 +105,14 @@ let clientDeviceYear = prompt('Введите год выпуска вашего
 OS = Number(OS);
 clientDeviceYear = Number(clientDeviceYear);
 
-let clientOSYear = clientDeviceYear <= 2015 ? 'Установите облегчённую версию приложения для' : 'версию';
+let clientOSYear = clientDeviceYear <= 2015 ? 'облегчённую  версию' : 'версию';
 
 switch (OS) {
     case 0:
-        console.log(`Установите ${clientOSYear} версию приложения для iOS по ссылке`);
+        console.log(`Установите ${clientOSYear} приложения для iOS по ссылке`);
         break;
     case 1:
-        console.log(`Установите ${clientOSYear} версию приложения для Android по ссылке`);
+        console.log(`Установите ${clientOSYear} приложения для Android по ссылке`);
         break;
     default:
         console.log('Не удалось определить операционную систему или введены некорректные данные');
