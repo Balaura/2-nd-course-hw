@@ -19,7 +19,7 @@ body {
           padding-top: 220px;
           padding-left: 120px;
 
-          .gamesite__title {
+          .first-screen__title {
                color: #FFF;
                font-size: 64px;
                font-style: normal;
@@ -28,7 +28,7 @@ body {
                max-width: 789px;
           }
 
-          .gamesite__text {
+          .first-screen__text {
                color: #FFF;
                font-size: 18px;
                font-style: normal;
@@ -43,7 +43,7 @@ body {
                }
           }
 
-          .gamesite__button {
+          .first-screen__button {
                border-radius: 30px;
                background: #9C0332;
                border: 0px solid;
@@ -69,17 +69,22 @@ body {
           padding: 128px 120px 128px 120px;
           background: #000915;
 
-          .gamesite__cart-game {
+          .cart-game {
                position: relative;
                max-width: 379px;
                max-height: 300px;
                border-radius: 16px;
-               // background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url($image-path), lightgray 50% / cover no-repeat;
+               // background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%);
 
-               img {
+               &:hover {
+                    border: 3px solid #44D2FF;
+               }
+
+               .link__img {
                     object-fit: cover;
                     width: 379px;
                     height: 300px;
+                    border-radius: 16px;
                }
 
                .cart-game__link {
@@ -101,7 +106,7 @@ body {
                     }
 
                     // Стили для img, чтобы убедиться, что они находятся под псевдоэлементом
-                    img {
+                    .link__img {
                          display: block;
                          width: 100%;
                          height: auto;
