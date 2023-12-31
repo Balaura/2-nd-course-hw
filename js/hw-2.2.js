@@ -18,7 +18,7 @@ let y = 2;
 alert(x + y) + " " + (x - y) + " " + (x * y) + " " + (x / y);
 
 //Задание 5
-result = y ** 5;
+let result = 2 ** 5;
 alert(result);
 
 //Задание 6

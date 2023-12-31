@@ -16,7 +16,7 @@ body {
   padding-top: 220px;
   padding-left: 120px;
 }
-.gamesite__first-screen .gamesite__title {
+.gamesite__first-screen .first-screen__title {
   color: #FFF;
   font-size: 64px;
   font-style: normal;
@@ -24,7 +24,7 @@ body {
   line-height: normal;
   max-width: 789px;
 }
-.gamesite__first-screen .gamesite__text {
+.gamesite__first-screen .first-screen__text {
   color: #FFF;
   font-size: 18px;
   font-style: normal;
@@ -34,10 +34,10 @@ body {
   padding-bottom: 44px;
   max-width: 481px;
 }
-.gamesite__first-screen .gamesite__text .text_fat {
+.gamesite__first-screen .first-screen__text .text_fat {
   font-weight: 700;
 }
-.gamesite__first-screen .gamesite__button {
+.gamesite__first-screen .first-screen__button {
   border-radius: 30px;
   background: #9C0332;
   border: 0px solid;
@@ -51,7 +51,7 @@ body {
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
 }
-.gamesite__first-screen .gamesite__button:hover {
+.gamesite__first-screen .first-screen__button:hover {
   background: #EB443F;
 }
 .gamesite__gamechoice-screen {
@@ -65,23 +65,27 @@ body {
   padding: 128px 120px 128px 120px;
   background: #000915;
 }
-.gamesite__gamechoice-screen .gamesite__cart-game {
+.gamesite__gamechoice-screen .cart-game {
   position: relative;
   max-width: 379px;
   max-height: 300px;
   border-radius: 16px;
 }
-.gamesite__gamechoice-screen .gamesite__cart-game img {
+.gamesite__gamechoice-screen .cart-game:hover {
+  border: 3px solid #44D2FF;
+}
+.gamesite__gamechoice-screen .cart-game .link__img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 379px;
   height: 300px;
+  border-radius: 16px;
 }
-.gamesite__gamechoice-screen .gamesite__cart-game .cart-game__link {
+.gamesite__gamechoice-screen .cart-game .cart-game__link {
   position: relative;
   display: inline-block;
 }
-.gamesite__gamechoice-screen .gamesite__cart-game .cart-game__link::after {
+.gamesite__gamechoice-screen .cart-game .cart-game__link::after {
   content: "";
   position: absolute;
   top: 0;
@@ -92,7 +96,7 @@ body {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%);
   z-index: 2;
 }
-.gamesite__gamechoice-screen .gamesite__cart-game .cart-game__link img {
+.gamesite__gamechoice-screen .cart-game .cart-game__link .link__img {
   display: block;
   width: 100%;
   height: auto;
@@ -109,4 +113,91 @@ body {
   font-weight: 600;
   line-height: 32px;
   z-index: 3;
+}
+
+@media (max-width: 375px) {
+  .gamesite__first-screen {
+    max-width: 343px;
+    padding: 239px 16px 239px 16px;
+    text-align: center;
+    height: auto;
+  }
+  .gamesite__first-screen .first-screen__title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-height: 77px;
+  }
+  .gamesite__first-screen .first-screen__text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    max-height: 66px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+  .gamesite__gamechoice-screen {
+    padding: 128px 16px 128px 16px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 32px;
+  }
+  .gamesite__gamechoice-screen .cart-game {
+    max-width: 343px;
+  }
+  .gamesite__gamechoice-screen .cart-game .link__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 343px;
+  }
+}
+@media (max-width: 355px) {
+  .gamesite__first-screen .first-screen__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .gamesite__first-screen {
+    max-width: 343px;
+    padding: 239px 16px 239px 16px;
+    text-align: center;
+    height: auto;
+  }
+  .gamesite__first-screen .first-screen__title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-height: 77px;
+  }
+  .gamesite__first-screen .first-screen__text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    max-height: 66px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+  .gamesite__gamechoice-screen {
+    padding: 128px 16px 128px 16px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 32px;
+  }
+  .gamesite__gamechoice-screen .cart-game {
+    max-width: 343px;
+  }
+  .gamesite__gamechoice-screen .cart-game .link__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 343px;
+  }
+}
+@media (max-width: 355px) {
+  .gamesite__first-screen .first-screen__title {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

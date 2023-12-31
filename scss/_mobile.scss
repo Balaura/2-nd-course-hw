@@ -1,0 +1,53 @@
+@media (max-width: 375px) {
+
+     .gamesite__first-screen {
+          max-width: 343px;
+          padding: 239px 16px 239px 16px;
+          text-align: center;
+          height: auto;
+
+          .first-screen__title {
+               font-size: 32px;
+               font-style: normal;
+               font-weight: 700;
+               line-height: normal;
+               max-height: 77px;
+
+          }
+
+          .first-screen__text {
+               font-size: 14px;
+               font-style: normal;
+               font-weight: 300;
+               line-height: 22px;
+               max-height: 66px;
+               padding-top: 33px;
+               padding-bottom: 33px;
+          }
+
+     }
+
+     .gamesite__gamechoice-screen {
+          padding: 128px 16px 128px 16px;
+          flex-wrap: wrap;
+          gap: 32px;
+
+          .cart-game {
+               max-width: 343px;
+
+               .link__img {
+                    object-fit: cover;
+                    width: 343px;
+               }
+          }
+     }
+}
+
+@media (max-width: 355px) {
+
+     .gamesite__first-screen {
+          .first-screen__title {
+               font-size: 30px;
+          }
+     }
+}
