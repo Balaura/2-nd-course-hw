@@ -1,12 +1,12 @@
 @media (max-width: 375px) {
 
-     .gamesite__first-screen {
+     .game-site__first-screen {
           max-width: 343px;
           padding: 239px 16px 239px 16px;
           text-align: center;
           height: auto;
 
-          .first-screen__title {
+          .game-site__title {
                font-size: 32px;
                font-style: normal;
                font-weight: 700;
@@ -15,7 +15,7 @@
 
           }
 
-          .first-screen__text {
+          .game-site__text {
                font-size: 14px;
                font-style: normal;
                font-weight: 300;
@@ -27,17 +27,114 @@
 
      }
 
-     .gamesite__gamechoice-screen {
+     .game-site__game-choice {
           padding: 128px 16px 128px 16px;
           flex-wrap: wrap;
           gap: 32px;
 
-          .cart-game {
+          .game-cart {
                max-width: 343px;
 
-               .link__img {
+               &__image {
                     object-fit: cover;
                     width: 343px;
+               }
+          }
+     }
+
+     .game-site__season-game {
+          padding: 51px 16px 85px 15px;
+          flex-wrap: wrap;
+          gap: 64px;
+          text-align: center;
+
+          .season-game__description {
+               max-width: 343px;
+
+               .season-game__title {
+                    font-size: 32px;
+                    font-weight: 700;
+               }
+
+               .season-game__text {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 22px
+               }
+
+               .game-site__button {
+                    margin-left: auto;
+                    margin-right: auto;
+               }
+          }
+
+          .season-game__img {
+               max-width: 344px;
+               max-height: 286px;
+          }
+     }
+
+     .game-site__remember-words {
+          padding: 51px 17px 90px 14px;
+          flex-wrap: wrap;
+          gap: 64px;
+          text-align: center;
+
+          .remember-words__description {
+               max-width: 343px;
+               order: 0;
+
+               .remember-words__title {
+                    font-size: 32px;
+                    font-weight: 700;
+               }
+
+               .remember-words__text {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 22px
+               }
+
+               .game-site__button {
+                    margin-left: auto;
+                    margin-right: auto;
+               }
+          }
+
+          .remember-words__img {
+               order: 1;
+               max-width: 344px;
+               max-height: 231px;
+          }
+     }
+
+     .game-site__riddle-game {
+          padding: 51px 17px 487px 14px;
+          flex-wrap: wrap;
+          gap: 64px;
+          text-align: center;
+
+          .riddle-game__description {
+               max-width: 343px;
+
+               .riddle-game__title {
+                    font-size: 32px;
+                    font-weight: 700;
+               }
+
+               .riddle-game__text {
+                    text-align: center;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 22px
+               }
+
+               .game-site__button {
+                    margin-left: auto;
+                    margin-right: auto;
                }
           }
      }
@@ -45,8 +142,8 @@
 
 @media (max-width: 355px) {
 
-     .gamesite__first-screen {
-          .first-screen__title {
+     .game-site__first-screen {
+          .game-site__title {
                font-size: 30px;
           }
      }
