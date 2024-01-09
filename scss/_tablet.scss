@@ -1,0 +1,113 @@
+@media (max-width: 1440px) and (min-width: 541px) {
+
+     .game-site__first-screen {
+          padding: 110px 90px 0px 90px;
+          max-height: 485px;
+
+          .game-site__title {
+               font-size: 42px;
+               font-weight: 500;
+          }
+
+          .game-site__text {
+               font-size: 16px;
+               font-weight: 200;
+               line-height: 28px;
+          }
+     }
+
+     .game-site__game-choice {
+          flex-wrap: wrap;
+          padding: 35px 80px 35px 80px;
+          justify-content: center;
+     }
+
+     .game-site__season-game {
+          padding: 51px 90px 85px 90px;
+          flex-wrap: wrap;
+          text-align: center;
+          justify-content: center;
+
+          .season-game__description {
+               max-width: 591px;
+
+               .season-game__title {
+                    font-size: 36px;
+               }
+
+               .season-game__text {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 28px;
+               }
+
+               .game-site__button {
+                    margin-left: auto;
+                    margin-right: auto;
+               }
+          }
+
+          .season-game__img {
+               max-width: 362px;
+               max-height: 241px;
+          }
+     }
+
+     .game-site__remember-words {
+          padding: 51px 90px 90px 90px;
+          flex-wrap: wrap;
+          text-align: center;
+          justify-content: center;
+
+          .remember-words__description {
+               max-width: 591px;
+
+               .remember-words__title {
+                    font-size: 36px;
+                    font-weight: 600;
+               }
+
+               .remember-words__text {
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 28px
+               }
+
+               .game-site__button {
+                    margin-left: auto;
+                    margin-right: auto;
+               }
+          }
+
+          .remember-words__img {
+               order: 1;
+               max-width: 362px;
+               max-height: 241px;
+          }
+     }
+
+     .game-site__riddle-game {
+          padding: 90px 120px 140px 120px;
+          text-align: start;
+
+          .riddle-game__description {
+
+               .riddle-game__title {
+                    font-size: 36px;
+                    font-weight: 600;
+               }
+
+               .riddle-game__text {
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 28px
+               }
+
+               .game-site__button {
+                    margin-left: auto;
+                    margin-right: auto;
+               }
+          }
+     }
+}

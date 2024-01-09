@@ -7,6 +7,11 @@ body {
      font-family: 'Montserrat', sans-serif;
 }
 
+.center {
+     padding-left: max(24px, calc(50% - 600px));
+     padding-right: max(24px, calc(50% - 600px));
+}
+
 .game-site {
 
      &__button {
@@ -266,5 +271,3 @@ body {
           }
      }
 }
-
-@import 'mobile';
