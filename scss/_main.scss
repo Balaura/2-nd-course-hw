@@ -7,11 +7,33 @@ body {
      font-family: 'Montserrat', sans-serif;
 }
 
+.center {
+     padding-left: max(24px, calc(50% - 600px));
+     padding-right: max(24px, calc(50% - 600px));
+}
 
-.gamesite {
+.game-site {
+
+     &__button {
+          border-radius: 30px;
+          background: #9C0332;
+          border: 0px solid;
+          color: #FFF;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width: 234px;
+          height: 49px;
+          transition: all 1.2s;
+
+          &:hover {
+               background: #EB443F;
+          }
+     }
 
      &__first-screen {
-          background-image: url(../img/bg_1.jpg);
+          background-image: url(../img/bg_first-screen.jpg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -19,7 +41,7 @@ body {
           padding-top: 220px;
           padding-left: 120px;
 
-          .first-screen__title {
+          .game-site__title {
                color: #FFF;
                font-size: 64px;
                font-style: normal;
@@ -28,7 +50,7 @@ body {
                max-width: 789px;
           }
 
-          .first-screen__text {
+          .game-site__text {
                color: #FFF;
                font-size: 18px;
                font-style: normal;
@@ -38,58 +60,41 @@ body {
                padding-bottom: 44px;
                max-width: 481px;
 
-               .text_fat {
+               .game-site__text--bold {
                     font-weight: 700;
                }
           }
 
-          .first-screen__button {
-               border-radius: 30px;
-               background: #9C0332;
-               border: 0px solid;
-               color: #FFF;
-               font-size: 18px;
-               font-style: normal;
-               font-weight: 400;
-               line-height: normal;
-               width: 234px;
-               height: 49px;
-               transition: all 1.2s;
 
-               &:hover {
-                    background: #EB443F;
-               }
-          }
      }
 
-     &__gamechoice-screen {
+     &__game-choice {
           display: flex;
           justify-content: space-between;
           gap: 32px;
           padding: 128px 120px 128px 120px;
           background: #000915;
 
-          .cart-game {
+          .game-cart {
                position: relative;
                max-width: 379px;
                max-height: 300px;
                border-radius: 16px;
-               // background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%);
 
-               &:hover {
-                    border: 3px solid #44D2FF;
-               }
-
-               .link__img {
+               .game-cart__image {
                     object-fit: cover;
                     width: 379px;
                     height: 300px;
                     border-radius: 16px;
                }
 
-               .cart-game__link {
+               .game-cart__link {
                     position: relative;
                     display: inline-block;
+
+                    &:hover::after {
+                         border: 3px solid #44D2FF;
+                    }
 
                     // Псевдоэлемент для создания градиента поверх изображения
                     &::after {
@@ -103,33 +108,166 @@ body {
                                    rgba(39, 1, 15, 0.00) 0%,
                                    #001944 100%);
                          z-index: 2;
+                         border-radius: 16px;
                     }
 
                     // Стили для img, чтобы убедиться, что они находятся под псевдоэлементом
-                    .link__img {
+                    .game-cart__image {
                          display: block;
                          width: 100%;
-                         height: auto;
+                         height: 100%;
                          z-index: 1;
-                         position: relative;
                     }
                }
 
+               .game-cart__name {
+                    position: absolute;
+                    bottom: 32px;
+                    left: 32px;
+                    color: #FFF;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px;
+                    z-index: 3;
+               }
+          }
+     }
+
+     &__season-game {
+          display: flex;
+          justify-content: space-between;
+          gap: 135px;
+          padding: 233px 120px 233px 120px;
+          background: #000915;
+
+          .season-game__description {
+               display: grid;
+               gap: 32px;
+
+               .season-game__title {
+                    color: #FFF;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+               }
+
+               .season-game__text {
+                    color: #FFF;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 32px;
+               }
           }
 
-          .cart-game__name {
+          .season-game__img {
+               max-width: 485px;
+               max-height: 333px;
+          }
+     }
+
+     &__remember-words {
+          display: flex;
+          justify-content: space-between;
+          gap: 135px;
+          padding: 239px 120px 239px 120px;
+          background: #000915;
+
+          .remember-words__img {
+               width: 481px;
+               height: 332px;
+          }
+
+          .remember-words__description {
+               display: grid;
+               gap: 32px;
+
+               .remember-words__title {
+                    color: #FFF;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+               }
+
+               .remember-words__text {
+                    color: #FFF;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 32px;
+                    // padding-top: 32px;
+                    // padding-bottom: 32px;
+               }
+          }
+
+     }
+
+     &__riddle-game {
+          padding: 276px 120px 288px 120px;
+          background-image: url(../img/bg_riddle-game.jpeg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          text-align: center;
+          max-width: 1440px;
+          max-height: 880px;
+          z-index: 1;
+          position: relative;
+          display: inline-block;
+
+          &::after {
+               content: '';
                position: absolute;
-               bottom: 32px;
-               left: 32px;
+               top: 0;
+               right: 0;
+               bottom: 0;
+               left: 0;
+               background:
+                    linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0.00) 100%),
+                    linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%);
+               z-index: -1;
+          }
+
+          .riddle-game__description {
+
+               .riddle-game__title {
+                    color: #FFF;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    z-index: 3;
+               }
+
+               .riddle-game__text {
+                    color: #FFF;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 32px;
+                    padding-top: 32px;
+                    padding-bottom: 32px;
+                    z-index: 3;
+               }
+          }
+
+     }
+
+     &__footer {
+          text-align: center;
+          padding-top: 32.5px;
+          padding-bottom: 32.5px;
+          background: #000915;
+
+          .footer__title {
                color: #FFF;
-               font-size: 24px;
+               font-size: 12px;
                font-style: normal;
-               font-weight: 600;
-               line-height: 32px;
-               z-index: 3;
+               font-weight: 400;
+               line-height: normal;
           }
      }
 }
-
-
-@import 'mobile';
