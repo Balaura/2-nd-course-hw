@@ -18,7 +18,7 @@ console.log(str);
 let arr = [];
 for (let i = 0; i < 3; i++) {
      arr[i] = [];
-     for (let j = 0; j < 3; j++) {
+     for (j = 0; j < 3; j++) {
           arr[i][j] = 1;
      }
 }
@@ -27,7 +27,7 @@ console.log(arr);
 // Задание 5
 
 let arry = [1, 1, 1];
-arry.push('2, 2, 2')
+arry.push(2, 2, 2)
 console.log(arry);
 
 // Задание 6
@@ -85,13 +85,13 @@ let words = ['ждать', 'здесь', 'спать', 'очень хочу', '-
 function getLengthWords(words) {
      return words.map(word => word.length);
 }
+
 console.log(getLengthWords(words));
 
 // Задание 13
 let arrays = [9, -8, 7, 0, 5];
 
 function filterPositive(arrays) {
-
      return arrays.filter(item => item < 0);
 }
 
