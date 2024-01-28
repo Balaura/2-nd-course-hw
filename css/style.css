@@ -8,8 +8,8 @@ body {
 }
 
 .center {
-  padding-left: max(24px, 50% - 600px);
-  padding-right: max(24px, 50% - 600px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .game-site__button {
@@ -36,7 +36,6 @@ body {
   background-size: cover;
   height: 100vh;
   padding-top: 220px;
-  padding-left: 120px;
 }
 .game-site__first-screen .game-site__title {
   color: #FFF;
@@ -192,7 +191,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  max-width: 1440px;
   max-height: 880px;
   z-index: 1;
   position: relative;
